@@ -1,4 +1,5 @@
 @charset "utf-8";
+body{background-color: #000;}
 @-webkit-keyframes  fadeIn{
     from{opacity: 0;}
     to{opacity: 1;}
@@ -15,12 +16,15 @@
     from{opacity: 1;}
     to{opacity: 0;}
 }
-.progress{font-size: 0.8rem; position: absolute; left: 50%; top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%); color: #fff;}
+#page0{height: 100%; bottom: 0; right: 0;}
+.page0-pic{ position: absolute; top: 29%; width: 58.6%; left: 20.7%;}
+.smell{width: 25.6vw; height: 0; background: url("../img/pic-smell.png") no-repeat center bottom; -webkit-background-size: 100% auto; background-size: 100% auto; position: absolute; left: 50%; margin-left: -12.8vw; bottom: 50.5vw; animation: smellMove 2s linear 0s infinite;}
+@-webkit-keyframes smellMove {
+    from{height: 0;}
+    to{height: 19.2vw;}
+}
+#page0 img{}
+.progress{font-size: 1.2rem; text-align: center; font-weight: bold; color: #fff;  position: absolute; width: 100%; top: 29%; margin-top: 56vw;}
 .word{position: absolute; height: 3.75vw; width: auto; opacity: 0;}
 .word0{height: 9.7vw; left: 12%; top: 13.8vw;}
 .word0.show1{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
@@ -63,6 +67,8 @@
 .word17.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
 .word18{left: 14%; top: 1376vw;}
 .word18.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word19{height: 6vw; left: 9%; top: 1398vw;}
+.word19.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
 
 
 
