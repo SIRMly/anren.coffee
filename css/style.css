@@ -1,0 +1,97 @@
+@charset "utf-8";
+@-webkit-keyframes  fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes  fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@-webkit-keyframes  fadeOut{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes  fadeOut{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.word{position: absolute; height: 3.75vw; width: auto; opacity: 0;}
+.word0{height: 9.7vw; left: 12%; top: 13.8vw;}
+.word0.show1{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word1{left: 20%; top: 71.8vw;}
+.word1.show1{animation: fadeIn 1.2s linear 0.8s 1 forwards;}
+.word1.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word2{left: 64%; top: 71.8vw;}
+.word2.show1{animation: fadeIn 1.2s linear 1.4s 1 forwards;}
+.word2.show2{animation: fadeIn 1.2s linear 0.9s 1 forwards;}
+.word3{left: 43%; top: 122vw;}
+.word3.show1{animation: fadeIn 1.2s linear 2s 1 forwards;}
+.word3.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word4{left: 41%; top: 238vw;}
+.word4.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word5{left: 43%; top: 347.6vw;}
+.word5.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word6{left: 38%; top: 410vw;}
+.word6.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word7{left: 37%; top: 468vw;}
+.word7.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word8{left: 31%; top: 523.5vw;}
+.word8.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word9{left: 74%; top: 565vw;}
+.word9.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word10{left: 38%; top: 682vw;}
+.word10.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word11{left: 38%; top: 825.2vw;}
+.word11.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word12{left: 42%; top: 879.5vw;}
+.word12.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word13{left: 38%; top: 971.2vw;}
+.word13.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word14{left: 40%; top: 1044.5vw;}
+.word14.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word15{left: 29%; top: 1112vw;}
+.word15.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word16{left: 41%; top: 1182vw;}
+.word16.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word17{left: 33%; top: 1253vw;}
+.word17.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word18{left: 14%; top: 1376vw;}
+.word18.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+
+
+
+
+
+
+
+
+/*==横屏==*/
+@-webkit-keyframes rotation {
+    10% { transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
+    50%, 60% { transform: rotate(0deg); -webkit-transform: rotate(0deg) }
+    90% { transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
+    100% { transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
+}
+
+@keyframes rotation {
+    10% {transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
+    50%, 60% {transform: rotate(0deg); -webkit-transform: rotate(0deg)}
+    90% { transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
+    100% {transform: rotate(-90deg); -webkit-transform: rotate(-90deg) }
+}
+
+#orientLayer { display: none }
+@media screen and (min-aspect-ratio: 12/9) {
+    #orientLayer { display: block }
+}
+.mod-orient-layer { display: none; position: fixed; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; background: #000; z-index: 9997 }
+.mod-orient-layer__content { position: absolute; width: 100%; top: 45%; margin-top: -75px; text-align: center }
+.mod-orient-layer__icon-orient { background-image: url('../img/crossWarning.png'); display: inline-block; width: 67px; height: 109px; transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); -webkit-animation: rotation infinite 1.5s ease-in-out; animation: rotation infinite 1.5s ease-in-out;
+    -webkit-background-size: 67px; background-size: 67px }
+.mod-orient-layer__desc { margin-top: 20px; font-size: 15px; color: #fff }
+
+
+
+
+
