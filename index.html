@@ -46,6 +46,7 @@
     <img src="img/word18.png" alt="" class="word word18"/>
     <img src="img/word19.png" alt="" class="word word19"/>
 </div>
+<div class="music"></div>
 <!--<div id="orientLayer" class="mod-orient-layer">-->
     <!--<div class="mod-orient-layer__content">-->
         <!--<i class="icon mod-orient-layer__icon-orient"></i>-->
@@ -113,9 +114,17 @@
                 }
             }
         }
+        $(".music").on(click, function (){
+            if(bgm.paused){
+                bgm.play();
+                $(".music").addClass("play");
+            }else{
+                bgm.pause();
+                $(".music").removeClass("play");
+            }
+        });
 
         for(var i=0; i<4; i++){
-//            console.log($(".word"+i).offset().top);
             if($(".word"+i).offset().top < 0.8*winH){
                 $(".word"+i).addClass("show1");
             }
