@@ -15,6 +15,12 @@
     from{opacity: 1;}
     to{opacity: 0;}
 }
+.progress{font-size: 0.8rem; position: absolute; left: 50%; top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); color: #fff;}
 .word{position: absolute; height: 3.75vw; width: auto; opacity: 0;}
 .word0{height: 9.7vw; left: 12%; top: 13.8vw;}
 .word0.show1{animation: fadeIn 1.2s linear 0.3s 1 forwards;}

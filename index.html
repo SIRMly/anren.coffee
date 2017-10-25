@@ -16,8 +16,10 @@
 </head>
 <body>
 <audio src="audio/bgm.mp3" loop preload="auto" id="bgm"></audio>
-<div class="page hide" id="page0"></div>
-<div class="page" id="page1">
+<div class="page" id="page0">
+    <div class="progress"></div>
+</div>
+<div class="page hide" id="page1">
     <img src="img/bg.png" alt=""/>
     <img src="img/word0.png" alt="" class="word word0"/>
     <img src="img/word1.png" alt="" class="word word1"/>
@@ -54,8 +56,28 @@
         }, false);
         var bgm = document.getElementById("bgm");
         var imgs = [
+                "img/bg.png",
+                "img/word0.png",
+                "img/word1.png",
+                "img/word2.png",
+                "img/word3.png",
+                "img/word4.png",
+                "img/word5.png",
+                "img/word6.png",
+                "img/word7.png",
+                "img/word8.png",
+                "img/word9.png",
+                "img/word10.png",
+                "img/word11.png",
+                "img/word12.png",
+                "img/word13.png",
+                "img/word14.png",
+                "img/word15.png",
+                "img/word16.png",
+                "img/word17.png",
+                "img/word18.png",
         ];
-        preload(imgs);
+        preload(imgs,".progress");
         function preload(imgs,proBox){
             var proNum = 0,
                     count = imgs.length,
@@ -69,10 +91,10 @@
                     $("#progress").width(proPercentage+"%");
                     if(proNum>=count){
                         proPercentage=100;
-//                        $("#page0").stop().fadeOut(500, function (){
-//                            $("#page0").addClass("hide");
-//                        });
-//                        $("#page1").stop().fadeIn(300);
+                        $("#page0").stop().fadeOut(500, function (){
+                            $("#page0").addClass("hide");
+                        });
+                        $("#page1").stop().fadeIn(300);
                         setTimeout(function(){
                             $(".music").addClass("play");
                             bgm.play();
@@ -81,13 +103,13 @@
                             });
                         },100)
                     }
-//                    proBox.html(proPercentage+"%");
+                    $(proBox).html(proPercentage+"%");
                 }
             }
         }
 
         for(var i=0; i<4; i++){
-            console.log($(".word"+i).offset().top);
+//            console.log($(".word"+i).offset().top);
             if($(".word"+i).offset().top < 0.8*winH){
                 $(".word"+i).addClass("show1");
             }
@@ -96,7 +118,6 @@
             $(".word").each(function (index, item){
                 if(!$(this).hasClass("show1")){
                     if($(this).offset().top < $(window).scrollTop()+0.9*winH){
-                        console.log(index)
                         $(this).addClass("show2");
                     }
                 }
