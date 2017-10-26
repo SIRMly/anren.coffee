@@ -77,10 +77,12 @@ body{background-color: #000;}
 .word16.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
 .word17{left: 33%; top: 1253vw;}
 .word17.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
-.word18{left: 14%; top: 1376vw;}
+.word18{left: 14%; top: 1315.3vw;}
 .word18.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
-.word19{height: 6vw; left: 9%; top: 1398vw;}
+.word19{height: 6vw; left: 8%; top: 1380.5vw;}
 .word19.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
+.word20{ width: 82.8%; height: auto; left: 8.6%; top: 1402vw;}
+.word20.show2{animation: fadeIn 1.2s linear 0.3s 1 forwards;}
 
 
 
